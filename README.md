@@ -12,15 +12,13 @@ css/style.css   スタイル
 js/auth.js      合言葉ゲートの処理
 ```
 
-## GitHub Pages での公開方法
+## GitHub Pages での公開方法（GitHub Actions）
 
-このサイトは https://github.com/0214ain-star/yukiusagi にあります。
+このサイトは https://github.com/0214ain-star/yukiusagi にあります。`main` に push すると `.github/workflows/deploy.yml` の GitHub Actions が自動的にビルド・デプロイします。
 
-1. リポジトリの Settings → Pages を開く。
-2. Source を「Deploy from a branch」、Branch を `main` / `/(root)` に設定して Save する。
-3. 数分後に `https://0214ain-star.github.io/yukiusagi/` でサイトが表示されます。
+初回のみ、リポジトリの Settings → Pages を開き、Source を **「GitHub Actions」** に変更してください（これは GitHub の画面上でしか設定できません）。設定後、Actions タブでワークフローが実行され、完了すると `https://0214ain-star.github.io/yukiusagi/` でサイトが表示されます。
 
-以降は `git add` → `git commit` → `git push` するたびに自動的にサイトへ反映されます。
+以降は `git add` → `git commit` → `git push` するたびに Actions が走り、自動的にサイトへ反映されます。進行状況はリポジトリの Actions タブで確認できます。
 
 ## 合言葉（パスワード）の仕組みと変更方法
 
