@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>限定ページ | Sheryl's Page</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">Sheryl's Page</a>
+    <nav class="nav">
+      <a href="index.html">ホーム</a>
+      <a href="profile.html">プロフィール</a>
+      <a href="diary.html" class="active">限定ページ</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+
+      <!-- 合言葉ゲート -->
+      <div id="gate" class="gate">
+        <h1>合言葉が必要です</h1>
+        <p>このページを見るには合言葉を入力してください。</p>
+        <form id="gate-form" autocomplete="off">
+          <input type="password" id="gate-input" placeholder="合言葉" required>
+          <button type="submit">入る</button>
+        </form>
+        <p id="gate-error" class="gate-error" hidden>合言葉が違います。</p>
+      </div>
+
+      <!-- 合言葉が正しいと表示される本文 -->
+      <div id="content" class="block" hidden>
+        <p class="section-kicker">members only</p>
+        <h1>限定ページ</h1>
+        <div class="divider" aria-hidden="true"><span></span></div>
+        <p class="placeholder">ここに限定コンテンツが入ります。</p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Sheryl's Page</p>
+  </div>
+</footer>
+
+<script src="js/auth.js" data-hash="d41dc6385e804fd6c6fe049ecd56a3c1bafa61e669d4f3b49082ff56f8ade10d"></script>
+</body>
+</html>
